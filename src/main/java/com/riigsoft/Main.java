@@ -6,7 +6,17 @@ public class Main {
 //        dt.dataTypes();
 //        Operators op = new Operators();
 //        op.operators();
-        Swap s = new Swap();
-        s.swap();
+//        Swap s = new Swap();
+//        s.swap();
+//
+//        Conditionals con = new Conditionals();
+//        con.conditions();
+
+//        Factorial f = new Factorial();
+////        f.factorial();
+//        f.fact();
+
+        Calculator calc = new Calculator();
+        calc.calculate();
     }
 }
