@@ -51,7 +51,7 @@ public class Main {
         atm.deposit(200);
         atm.checkBalance();
 
-        ATM ahmed = new ATM(); // different instance
+        ATM ahmed = new ATM(); // different instance that same structure atm
         ahmed.checkBalance();
 
 
