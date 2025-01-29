@@ -1,6 +1,9 @@
 package com.riigsoft;
 
 
+import com.riigsoft.inheritance.Circle;
+import com.riigsoft.inheritance.Rectangle;
+
 public class Main {
 
 
@@ -31,29 +34,35 @@ public class Main {
 ////        ac.getBalance(); // protected access
 
 
-//        Main m = new Main();
-//        m.getBalance();
+////        Main m = new Main();
+////        m.getBalance();
+//
+////        Account  a = new Account();
+////        System.out.println(a.getBalance());
+////        a.setBalance(100);
+////        System.out.println(a.getBalance());
+//
+//        ATM atm = new ATM();
+//        atm.greet("Abdallah");
+//        atm.greet("Ahmed");
+//
+//        atm.checkBalance();
+//
+//        atm.deposit(100);
+//        atm.checkBalance();
+//
+//        atm.deposit(200);
+//        atm.checkBalance();
+//
+//        ATM ahmed = new ATM(); // different instance that same structure atm
+//        ahmed.checkBalance();
 
-//        Account  a = new Account();
-//        System.out.println(a.getBalance());
-//        a.setBalance(100);
-//        System.out.println(a.getBalance());
 
-        ATM atm = new ATM();
-        atm.greet("Abdallah");
-        atm.greet("Ahmed");
+        Rectangle rect = new Rectangle();
+        System.out.println(rect.area());
 
-        atm.checkBalance();
-
-        atm.deposit(100);
-        atm.checkBalance();
-
-        atm.deposit(200);
-        atm.checkBalance();
-
-        ATM ahmed = new ATM(); // different instance that same structure atm
-        ahmed.checkBalance();
-
+        Circle circle = new Circle();
+        System.out.println(circle.area());
 
     }
 }
