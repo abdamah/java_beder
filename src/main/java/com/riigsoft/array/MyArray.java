@@ -12,7 +12,9 @@ public class MyArray {
         if (count == items.length - 1) {
             int[] newItems = new int[count * 2];
 
-            if (count >= 0) System.arraycopy(items, 0, newItems, 0, count);
+           for (int i = 0; i < count;i++){
+               newItems[i]= items[i];
+           }
 
             items = newItems;
         }
