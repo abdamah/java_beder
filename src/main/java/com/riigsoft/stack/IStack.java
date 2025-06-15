@@ -1,4 +1,4 @@
-package com.riigsoft;
+package com.riigsoft.stack;
 
 public interface IStack {
     void push(int value);

@@ -1,13 +1,9 @@
 package com.riigsoft.stack;
 
-import com.riigsoft.IStack;
-import org.w3c.dom.ls.LSOutput;
-
-import java.util.IllformedLocaleException;
 import java.util.Scanner;
 
 public class StackImpl implements IStack {
-    private int[] items;
+    private final int[] items;
     private int top;
 
     public StackImpl(int size) {
