@@ -1,20 +1,18 @@
 package com.riigsoft;
 
+import com.riigsoft.linkedlist.MyLinkedList;
+
 public class Main {
 
 
 
     public static void main(String[] args) throws Exception{
-     var c = Class.forName("com.riigsoft.linkedlist.MyLinkedList");
- var ms = c.getDeclaredMethods();
-     for (var m:ms){
-         System.out.println(m);
-     }
-
-       var fs = c.getDeclaredFields();
-     for (var f: fs)
-         System.out.println(f);
-
+   var list = new MyLinkedList();
+        list.addLast(10);
+        list.addLast(20);
+        list.addFirst(30);
+        System.out.println(list.size());
+   list.printList();
 
     }
 }

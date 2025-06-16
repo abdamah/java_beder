@@ -19,7 +19,8 @@ public class MyLinkedList {
     public void addLast(int item) {
         var node = new Node(item);
 
-        if (isEmpty()) first = last = node;
+        if (isEmpty())
+            first = last = node;
         else {
             last.next = node;
             last = node;
@@ -114,22 +115,23 @@ public class MyLinkedList {
         return array;
     }
 
- public void reverse(){
+    public void reverse() {
         if (isEmpty()) return;
 
         var prev = first;
         var cur = first.next;
-        while (cur != null){
+        while (cur != null) {
             var next = cur.next;
             cur.next = prev;
-            prev =cur;
+            prev = cur;
             cur = next;
         }
 
         last = first;
         last.next = null;
         first = prev;
- }
+    }
+
     public void printList() {
         var current = first;
         System.out.print("[");
