@@ -3,10 +3,10 @@ package com.riigsoft.sort;
 public class SelectionSort {
     public void sort(int[] numbers){
         for (var i = 0; i < numbers.length; i++){
-//            var mindIndex = i;
+//            var minIndex = i;
 //            for (var j = i; j < numbers.length; j++)
-//                if (numbers[j] < numbers[mindIndex])
-//                    mindIndex =j;
+//                if (numbers[j] < numbers[minIndex])
+//                    minIndex =j;
             int minIndex = findMinIndex(numbers, i);
             swap(numbers, minIndex, i);
         }
